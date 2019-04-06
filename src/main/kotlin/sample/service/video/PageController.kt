@@ -5,11 +5,12 @@ import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
+import org.springframework.web.bind.annotation.RestController
 import java.nio.file.Files
 import java.nio.file.Paths
 import kotlin.streams.toList
 
-@Controller
+@RestController
 class PageController(@Value("\${video.location}") val videoLocation: String) {
 
     @GetMapping("/")

@@ -45,4 +45,9 @@ dependencies {
 	compile('net.bramp.ffmpeg:ffmpeg:0.6.2')
 	compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	compile("org.jetbrains.kotlin:kotlin-reflect")
+	compile("org.springframework.boot:spring-boot-starter-web")
+	testCompile("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("org.junit.jupiter:junit-jupiter-api")
+	testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+	testImplementation("io.mockk:mockk:1.8.8")
 }

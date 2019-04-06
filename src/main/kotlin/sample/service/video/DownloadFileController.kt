@@ -17,7 +17,7 @@ class DownloadFileController {
     @Autowired
     lateinit var fileStorage: FileStorage
 
-    @RequestMapping("/jnsffjnsdfjkndsfjkndjkn")
+    @RequestMapping("/files")
     fun getListFiles(): List<FileInfo> {
         val fileInfos: List<FileInfo> = fileStorage.loadFiles().map { path ->
             FileInfo(path.fileName.toString(),

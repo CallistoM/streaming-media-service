@@ -15,7 +15,8 @@ import java.util.stream.Stream
 class FileStorageImpl : FileStorage {
 
     val log = LoggerFactory.getLogger(this::class.java)
-    val rootLocation = Paths.get("/opt/MediaCenter/videos")!!
+//    val rootLocation = Paths.get("/opt/MediaCenter/videos")!!
+    val rootLocation = Paths.get("videos")!!
 
     override fun store(file: MultipartFile) {
         Files.copy(file.inputStream, this.rootLocation.resolve(file.originalFilename))
